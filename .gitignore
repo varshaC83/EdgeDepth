@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+# Training/validation frames are re-created by scripts/prepare_dataset.py; the
+# unseen test split is committed so evaluation is reproducible out of the box.
+data/nyu/train/
+data/nyu/val/
+*.log
+.DS_Store

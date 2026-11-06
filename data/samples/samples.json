@@ -1,0 +1,40 @@
+[
+ {
+  "id": "nyu_basement_3_0001",
+  "dataset": "NYU Depth V2 (test split, unseen scene)",
+  "gt": "dense filled"
+ },
+ {
+  "id": "nyu_basement_3_0006",
+  "dataset": "NYU Depth V2 (test split, unseen scene)",
+  "gt": "dense filled"
+ },
+ {
+  "id": "nyu_study_9_0003",
+  "dataset": "NYU Depth V2 (test split, unseen scene)",
+  "gt": "dense filled"
+ },
+ {
+  "id": "nyu_study_9_0010",
+  "dataset": "NYU Depth V2 (test split, unseen scene)",
+  "gt": "dense filled"
+ },
+ {
+  "id": "tum_fr1",
+  "dataset": "TUM RGB-D (Kinect v1)",
+  "gt": "raw sensor depth with holes",
+  "holes_pct": 19.19
+ },
+ {
+  "id": "sun_rgbd",
+  "dataset": "SUN RGB-D",
+  "gt": "raw sensor depth with holes",
+  "holes_pct": 18.23
+ },
+ {
+  "id": "redwood_0",
+  "dataset": "Redwood (PrimeSense)",
+  "gt": "raw sensor depth with holes",
+  "holes_pct": 13.04
+ }
+]

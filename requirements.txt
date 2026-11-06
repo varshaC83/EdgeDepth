@@ -1,0 +1,13 @@
+# CPU-only PyTorch wheels (small, no CUDA download). Remove the next line to use the default index.
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch>=2.2,<2.16
+numpy>=1.26,<3
+opencv-python-headless>=4.9,<6
+scipy>=1.11
+scikit-image>=0.22
+streamlit>=1.40
+plotly>=5.20
+matplotlib>=3.8
+pandas>=2.1
+psutil>=5.9
+pytest>=8.0

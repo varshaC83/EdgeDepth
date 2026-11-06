@@ -1,0 +1,36 @@
+1/24 14s
+2/24 28s
+3/24 42s
+4/24 56s
+5/24 70s
+6/24 84s
+7/24 99s
+8/24 113s
+9/24 127s
+10/24 142s
+11/24 156s
+12/24 170s
+13/24 184s
+14/24 197s
+15/24 221s
+16/24 235s
+17/24 249s
+18/24 263s
+19/24 276s
+20/24 290s
+21/24 303s
+22/24 317s
+23/24 330s
+24/24 344s
+A1_interpolation_only                    RMSE 0.0917 MAE 0.0420 B-RMSE 0.2136 F1 0.635 SSIM 0.9263 0ms
+A2_interpolation_guided_filter           RMSE 0.0986 MAE 0.0461 B-RMSE 0.2293 F1 0.736 SSIM 0.9255 21ms
+A3_dl_only_backbone                      RMSE 0.0712 MAE 0.0319 B-RMSE 0.1693 F1 0.846 SSIM 0.9418 95ms
+A4a_dl_learned_refinement(CSPN)          RMSE 0.0669 MAE 0.0283 B-RMSE 0.1601 F1 0.870 SSIM 0.9532 93ms
+A4b_dl_cspn_edge_aware_backprojection    RMSE 0.0634 MAE 0.0265 B-RMSE 0.1518 F1 0.877 SSIM 0.9550 262ms
+A4c_dl_cspn_weighted_median_snapping     RMSE 0.0758 MAE 0.0299 B-RMSE 0.1851 F1 0.880 SSIM 0.9480 137ms
+A5_full_hybrid                           RMSE 0.0634 MAE 0.0265 B-RMSE 0.1517 F1 0.877 SSIM 0.9551 337ms
+X1_hybrid_without_backprojection         RMSE 0.0668 MAE 0.0283 B-RMSE 0.1601 F1 0.869 SSIM 0.9532 171ms
+X2_hybrid_constant_weights(no_cues)      RMSE 0.0634 MAE 0.0265 B-RMSE 0.1517 F1 0.877 SSIM 0.9551 338ms
+X3_uniform_average_of_experts            RMSE 0.0889 MAE 0.0423 B-RMSE 0.2059 F1 0.757 SSIM 0.9370 172ms
+X4_hybrid_classical_only(fallback)       RMSE 0.0885 MAE 0.0387 B-RMSE 0.2099 F1 0.799 SSIM 0.9333 258ms
+X5_hybrid_plus_weighted_median_snapping  RMSE 0.0720 MAE 0.0279 B-RMSE 0.1759 F1 0.887 SSIM 0.9502 398ms

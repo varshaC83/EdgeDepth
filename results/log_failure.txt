@@ -1,0 +1,17 @@
+F1 0.1 {'bicubic': 0.0727, 'joint_bilateral': 0.0894, 'guided_filter': 0.0714, 'deep_learning': 0.0645, 'hybrid': 0.0561}
+F1 0.05 {'bicubic': 0.0967, 'joint_bilateral': 0.1116, 'guided_filter': 0.0946, 'deep_learning': 0.0826, 'hybrid': 0.0753}
+F1 0.02 {'bicubic': 0.1392, 'joint_bilateral': 0.1472, 'guided_filter': 0.1293, 'deep_learning': 0.1112, 'hybrid': 0.1034}
+F1 0.01 {'bicubic': 0.1738, 'joint_bilateral': 0.1786, 'guided_filter': 0.165, 'deep_learning': 0.1304, 'hybrid': 0.1223}
+F1 0.005 {'bicubic': 0.2252, 'joint_bilateral': 0.2335, 'guided_filter': 0.212, 'deep_learning': 0.1699, 'hybrid': 0.1614}
+F1 0.002 {'bicubic': 0.2747, 'joint_bilateral': 0.2958, 'guided_filter': 0.2625, 'deep_learning': 0.2325, 'hybrid': 0.2264}
+F2 {'bicubic': {'inside': 0.47770912759006023, 'outside': 0.05804463475942612}, 'joint_bilateral': {'inside': 0.47028907015919685, 'outside': 0.07473930553533137}, 'guided_filter': {'inside': 0.4769887626171112, 'outside': 0.06818022485822439}, 'deep_learning': {'inside': 0.4391397722065449, 'outside': 0.044580566231161356}, 'hybrid': {'inside': 0.43878905288875103, 'outside': 0.04128896538168192}}
+F3 1 {'bicubic': 0.0619, 'joint_bilateral': 0.0765, 'guided_filter': 0.0712, 'deep_learning': 0.047, 'hybrid': 0.0451}
+F3 2 {'bicubic': 0.0656, 'joint_bilateral': 0.078, 'guided_filter': 0.0729, 'deep_learning': 0.05, 'hybrid': 0.0501}
+F3 4 {'bicubic': 0.0783, 'joint_bilateral': 0.0836, 'guided_filter': 0.0792, 'deep_learning': 0.0628, 'hybrid': 0.0627}
+F3 8 {'bicubic': 0.1151, 'joint_bilateral': 0.1025, 'guided_filter': 0.0998, 'deep_learning': 0.1072, 'hybrid': 0.1068}
+F4 {'bicubic': {'rmse': 0.0026940933894366026, 'mae_on_rgb_edges_mm': 1.8060206493828446, 'mae_off_rgb_edges_mm': 2.0814171293750405, 'texture_copy_ratio': 0.8676879919428329}, 'joint_bilateral': {'rmse': 0.007493955781683326, 'mae_on_rgb_edges_mm': 6.167850981000811, 'mae_off_rgb_edges_mm': 3.7190882430877537, 'texture_copy_ratio': 1.6584309319533608}, 'guided_filter': {'rmse': 0.0036868020542897284, 'mae_on_rgb_edges_mm': 2.2938377514947206, 'mae_off_rgb_edges_mm': 2.4001056444831192, 'texture_copy_ratio': 0.9557236602344292}, 'deep_learning': {'rmse': 0.008772293338552117, 'mae_on_rgb_edges_mm': 6.437058269511908, 'mae_off_rgb_edges_mm': 5.840206635184586, 'texture_copy_ratio': 1.1021970063065172}, 'hybrid': {'rmse': 0.005357596935937181, 'mae_on_rgb_edges_mm': 3.5254372342024, 'mae_off_rgb_edges_mm': 2.6687073841458187, 'texture_copy_ratio': 1.3210280209610907}}
+F5 0 {'bicubic': (0.2451, 0.314), 'joint_bilateral': (0.2802, 0.645), 'guided_filter': (0.2691, 0.612), 'deep_learning': (0.1987, 0.779), 'hybrid': (0.1879, 0.79)}
+F5 2 {'bicubic': (0.2451, 0.314), 'joint_bilateral': (0.2709, 0.67), 'guided_filter': (0.2678, 0.611), 'deep_learning': (0.1986, 0.782), 'hybrid': (0.1877, 0.793)}
+F5 4 {'bicubic': (0.2451, 0.314), 'joint_bilateral': (0.2857, 0.578), 'guided_filter': (0.2723, 0.599), 'deep_learning': (0.2276, 0.739), 'hybrid': (0.2108, 0.737)}
+F5 8 {'bicubic': (0.2451, 0.314), 'joint_bilateral': (0.2924, 0.476), 'guided_filter': (0.2745, 0.581), 'deep_learning': (0.2336, 0.685), 'hybrid': (0.2211, 0.706)}
+ALLDONE

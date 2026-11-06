@@ -1,0 +1,47 @@
+%% EdgeDepth system architecture (Mermaid). Mirrors the code in edgedepth/ and ui/.
+flowchart LR
+    subgraph IN[Inputs]
+        RGB[RGB guide<br/>H x W]
+        OBS[Observation<br/>H/s x W/s low-res or sparse H x W<br/>0 = missing]
+    end
+
+    subgraph PRE[Pre-processing - edgedepth/classical]
+        MISS[detect_missing<br/>holes.py]
+        NOISE[estimate_noise_sigma<br/>MAD of median residual]
+        DEN[denoise_depth<br/>median + range-adaptive bilateral<br/>hybrid path, only if noisy]
+        FILL[push_pull_fill<br/>multi-scale normalised conv.]
+    end
+
+    subgraph EXP[Experts - same input, same output size]
+        NN[nearest]
+        BL[bilinear]
+        BC[bicubic]
+        JBU[joint bilateral upsampling<br/>filters.py]
+        GF[colour guided filter<br/>filters.py]
+        DL[EdgeDepthNet<br/>model/network.py]
+    end
+
+    subgraph HYB[Hybrid - edgedepth/hybrid/fusion.py]
+        CUES[Cues: B_dl, B_cl, V, E, H,<br/>T_k texture-copy, R_k data residual, A_k consensus dev.]
+        MOE[Softmax mixture of experts<br/>w_k = softmax beta_k . phi_k]
+        BP[Edge-aware back-projection<br/>joint trilateral residual, 3 iters]
+        SNAP[optional weighted-median snapping<br/>classical/boundary.py]
+    end
+
+    OUT[HR depth + metrics<br/>metrics.py]
+    UI[Streamlit UI - app.py, ui/]
+
+    OBS --> MISS --> NOISE --> DEN --> FILL
+    FILL --> NN & BL & BC & GF
+    OBS --> JBU
+    RGB --> JBU & GF & DL
+    OBS --> DL
+    BC & GF & JBU & DL --> CUES
+    RGB --> CUES
+    CUES --> MOE
+    BC & GF & JBU & DL --> MOE
+    MOE --> BP --> OUT
+    OBS --> BP
+    BP -.-> SNAP -.-> OUT
+    NN & BL & BC & JBU & GF & DL --> OUT
+    OUT --> UI

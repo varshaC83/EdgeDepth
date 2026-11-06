@@ -1,0 +1,89 @@
+methods: ['nearest', 'bilinear', 'bicubic', 'joint_bilateral', 'guided_filter', 'deep_learning', 'hybrid']  frames: 24
+1/24 basement_3_0001  5s
+2/24 basement_3_0002  11s
+3/24 basement_3_0003  16s
+4/24 basement_3_0004  22s
+5/24 basement_3_0005  27s
+6/24 basement_3_0006  32s
+7/24 basement_3_0007  38s
+8/24 basement_3_0008  44s
+9/24 basement_3_0009  50s
+10/24 basement_3_0010  58s
+11/24 study_9_0001  65s
+12/24 study_9_0002  75s
+13/24 study_9_0003  81s
+14/24 study_9_0004  87s
+15/24 study_9_0005  92s
+16/24 study_9_0006  99s
+17/24 study_9_0007  108s
+18/24 study_9_0008  113s
+19/24 study_9_0009  119s
+20/24 study_9_0010  124s
+21/24 study_9_0011  130s
+22/24 study_9_0012  136s
+23/24 study_9_0013  141s
+24/24 study_9_0014  146s
+
+== 2x clean
+  Nearest neighbour              RMSE 0.0491 MAE 0.0152 PSNR 48.33 SSIM 0.9764 B-RMSE 0.1258 EdgeF1 0.949 Sharp 0.809 0ms
+  Bilinear                       RMSE 0.0404 MAE 0.0139 PSNR 49.98 SSIM 0.9833 B-RMSE 0.1044 EdgeF1 0.894 Sharp 0.698 0ms
+  Bicubic                        RMSE 0.0347 MAE 0.0125 PSNR 51.32 SSIM 0.9870 B-RMSE 0.0893 EdgeF1 0.938 Sharp 0.810 0ms
+  Joint bilateral (JBU)          RMSE 0.0427 MAE 0.0144 PSNR 49.54 SSIM 0.9817 B-RMSE 0.1107 EdgeF1 0.904 Sharp 0.700 48ms
+  Guided filter                  RMSE 0.0452 MAE 0.0165 PSNR 48.95 SSIM 0.9786 B-RMSE 0.1172 EdgeF1 0.916 Sharp 0.655 22ms
+  Deep learning (EdgeDepthNet)   RMSE 0.0291 MAE 0.0113 PSNR 52.75 SSIM 0.9888 B-RMSE 0.0719 EdgeF1 0.960 Sharp 0.932 165ms
+  Hybrid (fusion + edge-aware refinement) RMSE 0.0259 MAE 0.0085 PSNR 53.99 SSIM 0.9929 B-RMSE 0.0651 EdgeF1 0.968 Sharp 0.939 371ms
+
+== 2x noisy_missing
+  Nearest neighbour              RMSE 0.0763 MAE 0.0299 PSNR 44.56 SSIM 0.9394 B-RMSE 0.1920 EdgeF1 0.916 Sharp 0.593 1ms
+  Bilinear                       RMSE 0.0692 MAE 0.0268 PSNR 45.43 SSIM 0.9557 B-RMSE 0.1761 EdgeF1 0.863 Sharp 0.526 1ms
+  Bicubic                        RMSE 0.0681 MAE 0.0265 PSNR 45.57 SSIM 0.9536 B-RMSE 0.1722 EdgeF1 0.896 Sharp 0.596 1ms
+  Joint bilateral (JBU)          RMSE 0.0676 MAE 0.0220 PSNR 45.59 SSIM 0.9598 B-RMSE 0.1747 EdgeF1 0.932 Sharp 0.666 51ms
+  Guided filter                  RMSE 0.0703 MAE 0.0277 PSNR 45.29 SSIM 0.9551 B-RMSE 0.1790 EdgeF1 0.862 Sharp 0.501 22ms
+  Deep learning (EdgeDepthNet)   RMSE 0.0487 MAE 0.0177 PSNR 48.25 SSIM 0.9750 B-RMSE 0.1231 EdgeF1 0.935 Sharp 0.816 105ms
+  Hybrid (fusion + edge-aware refinement) RMSE 0.0461 MAE 0.0171 PSNR 48.86 SSIM 0.9760 B-RMSE 0.1153 EdgeF1 0.940 Sharp 0.823 371ms
+
+== 4x clean
+  Nearest neighbour              RMSE 0.0852 MAE 0.0311 PSNR 43.58 SSIM 0.9290 B-RMSE 0.2176 EdgeF1 0.918 Sharp 0.581 0ms
+  Bilinear                       RMSE 0.0691 MAE 0.0282 PSNR 45.38 SSIM 0.9529 B-RMSE 0.1777 EdgeF1 0.676 Sharp 0.447 0ms
+  Bicubic                        RMSE 0.0607 MAE 0.0252 PSNR 46.44 SSIM 0.9577 B-RMSE 0.1546 EdgeF1 0.744 Sharp 0.522 0ms
+  Joint bilateral (JBU)          RMSE 0.0760 MAE 0.0297 PSNR 44.61 SSIM 0.9481 B-RMSE 0.1946 EdgeF1 0.801 Sharp 0.463 49ms
+  Guided filter                  RMSE 0.0706 MAE 0.0294 PSNR 45.18 SSIM 0.9510 B-RMSE 0.1813 EdgeF1 0.843 Sharp 0.438 21ms
+  Deep learning (EdgeDepthNet)   RMSE 0.0460 MAE 0.0185 PSNR 48.69 SSIM 0.9730 B-RMSE 0.1139 EdgeF1 0.919 Sharp 0.798 89ms
+  Hybrid (fusion + edge-aware refinement) RMSE 0.0430 MAE 0.0164 PSNR 49.37 SSIM 0.9769 B-RMSE 0.1077 EdgeF1 0.922 Sharp 0.797 337ms
+
+== 4x noisy_missing
+  Nearest neighbour              RMSE 0.1238 MAE 0.0547 PSNR 40.46 SSIM 0.8728 B-RMSE 0.2884 EdgeF1 0.771 Sharp 0.399 0ms
+  Bilinear                       RMSE 0.1129 MAE 0.0508 PSNR 41.31 SSIM 0.9084 B-RMSE 0.2654 EdgeF1 0.596 Sharp 0.315 0ms
+  Bicubic                        RMSE 0.1108 MAE 0.0486 PSNR 41.46 SSIM 0.9052 B-RMSE 0.2602 EdgeF1 0.646 Sharp 0.361 1ms
+  Joint bilateral (JBU)          RMSE 0.1061 MAE 0.0406 PSNR 41.73 SSIM 0.9141 B-RMSE 0.2636 EdgeF1 0.782 Sharp 0.444 51ms
+  Guided filter                  RMSE 0.1129 MAE 0.0512 PSNR 41.30 SSIM 0.9092 B-RMSE 0.2656 EdgeF1 0.680 Sharp 0.310 22ms
+  Deep learning (EdgeDepthNet)   RMSE 0.0760 MAE 0.0301 PSNR 44.33 SSIM 0.9473 B-RMSE 0.1850 EdgeF1 0.866 Sharp 0.659 218ms
+  Hybrid (fusion + edge-aware refinement) RMSE 0.0723 MAE 0.0292 PSNR 44.79 SSIM 0.9475 B-RMSE 0.1757 EdgeF1 0.867 Sharp 0.665 429ms
+
+== 8x clean
+  Nearest neighbour              RMSE 0.1366 MAE 0.0623 PSNR 39.52 SSIM 0.8284 B-RMSE 0.3247 EdgeF1 0.588 Sharp 0.329 0ms
+  Bilinear                       RMSE 0.1159 MAE 0.0561 PSNR 41.09 SSIM 0.8982 B-RMSE 0.2752 EdgeF1 0.248 Sharp 0.238 0ms
+  Bicubic                        RMSE 0.1045 MAE 0.0505 PSNR 41.96 SSIM 0.9009 B-RMSE 0.2525 EdgeF1 0.363 Sharp 0.280 0ms
+  Joint bilateral (JBU)          RMSE 0.1221 MAE 0.0573 PSNR 40.68 SSIM 0.8964 B-RMSE 0.2893 EdgeF1 0.648 Sharp 0.295 54ms
+  Guided filter                  RMSE 0.1177 MAE 0.0581 PSNR 40.97 SSIM 0.8977 B-RMSE 0.2771 EdgeF1 0.660 Sharp 0.242 21ms
+  Deep learning (EdgeDepthNet)   RMSE 0.0827 MAE 0.0361 PSNR 43.42 SSIM 0.9333 B-RMSE 0.1996 EdgeF1 0.817 Sharp 0.581 133ms
+  Hybrid (fusion + edge-aware refinement) RMSE 0.0782 MAE 0.0335 PSNR 44.00 SSIM 0.9355 B-RMSE 0.1887 EdgeF1 0.823 Sharp 0.591 392ms
+
+== 8x noisy_missing
+  Nearest neighbour              RMSE 0.1890 MAE 0.0986 PSNR 36.84 SSIM 0.7832 B-RMSE 0.3820 EdgeF1 0.475 Sharp 0.222 0ms
+  Bilinear                       RMSE 0.1750 MAE 0.0930 PSNR 37.61 SSIM 0.8591 B-RMSE 0.3564 EdgeF1 0.161 Sharp 0.165 0ms
+  Bicubic                        RMSE 0.1716 MAE 0.0885 PSNR 37.78 SSIM 0.8533 B-RMSE 0.3528 EdgeF1 0.224 Sharp 0.190 0ms
+  Joint bilateral (JBU)          RMSE 0.1641 MAE 0.0774 PSNR 38.08 SSIM 0.8545 B-RMSE 0.3628 EdgeF1 0.567 Sharp 0.273 50ms
+  Guided filter                  RMSE 0.1749 MAE 0.0938 PSNR 37.61 SSIM 0.8614 B-RMSE 0.3555 EdgeF1 0.456 Sharp 0.167 23ms
+  Deep learning (EdgeDepthNet)   RMSE 0.1188 MAE 0.0564 PSNR 40.39 SSIM 0.9016 B-RMSE 0.2672 EdgeF1 0.721 Sharp 0.471 146ms
+  Hybrid (fusion + edge-aware refinement) RMSE 0.1147 MAE 0.0543 PSNR 40.79 SSIM 0.9016 B-RMSE 0.2579 EdgeF1 0.742 Sharp 0.488 395ms
+
+== sparse sparse_5pct
+  Nearest neighbour              RMSE 0.1270 MAE 0.0413 PSNR 40.06 SSIM 0.8812 B-RMSE 0.3193 EdgeF1 0.856 Sharp 0.632 4ms
+  Bilinear                       RMSE 0.0922 MAE 0.0343 PSNR 42.88 SSIM 0.9310 B-RMSE 0.2295 EdgeF1 0.743 Sharp 0.471 32ms
+  Bicubic                        RMSE 0.0946 MAE 0.0376 PSNR 42.55 SSIM 0.9236 B-RMSE 0.2281 EdgeF1 0.794 Sharp 0.572 42ms
+  Joint bilateral (JBU)          RMSE 0.1116 MAE 0.0474 PSNR 41.28 SSIM 0.9095 B-RMSE 0.2727 EdgeF1 0.741 Sharp 0.402 297ms
+  Guided filter                  RMSE 0.0914 MAE 0.0353 PSNR 42.96 SSIM 0.9321 B-RMSE 0.2273 EdgeF1 0.806 Sharp 0.449 52ms
+  Deep learning (EdgeDepthNet)   RMSE 0.0814 MAE 0.0321 PSNR 43.61 SSIM 0.9447 B-RMSE 0.2002 EdgeF1 0.871 Sharp 0.633 106ms
+  Hybrid (fusion + edge-aware refinement) RMSE 0.0745 MAE 0.0258 PSNR 44.46 SSIM 0.9531 B-RMSE 0.1865 EdgeF1 0.896 Sharp 0.688 1550ms
+memory {'nearest': 0.6072707176208496, 'bilinear': 0.6072726249694824, 'bicubic': 0.6073052883148193, 'joint_bilateral': 4.787844181060791, 'guided_filter': 16.151345014572144, 'deep_learning': 2.347127676010132, 'hybrid': 20.658772230148315}

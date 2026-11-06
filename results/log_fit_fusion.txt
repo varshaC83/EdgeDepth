@@ -1,0 +1,105 @@
+collecting with_dl ...
+  frame 1/29
+  frame 2/29
+  frame 3/29
+  frame 4/29
+  frame 5/29
+  frame 6/29
+  frame 7/29
+  frame 8/29
+  frame 9/29
+  frame 10/29
+  frame 11/29
+  frame 12/29
+  frame 13/29
+  frame 14/29
+  frame 15/29
+  frame 16/29
+  frame 17/29
+  frame 18/29
+  frame 19/29
+  frame 20/29
+  frame 21/29
+  frame 22/29
+  frame 23/29
+  frame 24/29
+  frame 25/29
+  frame 26/29
+  frame 27/29
+  frame 28/29
+  frame 29/29
+{
+ "with_dl": {
+  "pixels": 1740000,
+  "mae_each_expert_on_samples": {
+   "bicubic": 0.04875320568680763,
+   "guided_filter": 0.05200154334306717,
+   "joint_bilateral": 0.04943307861685753,
+   "deep_learning": 0.0302814282476902
+  },
+  "mae_fused_on_samples": 0.030284922569990158
+ },
+ "with_dl_nocues": {
+  "mae_fused_on_samples": 0.030286084860563278
+ },
+ "with_dl_uniform": {
+  "mae_fused_on_samples": 0.04240832105278969
+ }
+}
+collecting classical ...
+  frame 1/29
+  frame 2/29
+  frame 3/29
+  frame 4/29
+  frame 5/29
+  frame 6/29
+  frame 7/29
+  frame 8/29
+  frame 9/29
+  frame 10/29
+  frame 11/29
+  frame 12/29
+  frame 13/29
+  frame 14/29
+  frame 15/29
+  frame 16/29
+  frame 17/29
+  frame 18/29
+  frame 19/29
+  frame 20/29
+  frame 21/29
+  frame 22/29
+  frame 23/29
+  frame 24/29
+  frame 25/29
+  frame 26/29
+  frame 27/29
+  frame 28/29
+  frame 29/29
+{
+ "with_dl": {
+  "pixels": 1740000,
+  "mae_each_expert_on_samples": {
+   "bicubic": 0.04875320568680763,
+   "guided_filter": 0.05200154334306717,
+   "joint_bilateral": 0.04943307861685753,
+   "deep_learning": 0.0302814282476902
+  },
+  "mae_fused_on_samples": 0.030284922569990158
+ },
+ "with_dl_nocues": {
+  "mae_fused_on_samples": 0.030286084860563278
+ },
+ "with_dl_uniform": {
+  "mae_fused_on_samples": 0.04240832105278969
+ },
+ "classical": {
+  "pixels": 1740000,
+  "mae_each_expert_on_samples": {
+   "bicubic": 0.04896138235926628,
+   "guided_filter": 0.052182022482156754,
+   "joint_bilateral": 0.049570657312870026
+  },
+  "mae_fused_on_samples": 0.04727683961391449
+ }
+}
